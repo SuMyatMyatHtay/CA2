@@ -1,0 +1,162 @@
+@media only screen and (max-width: 765px) {
+  #board { 
+    height: 380px;
+  }
+
+  .tile {
+    font-size: 2.5vw;
+  }
+
+  #Text_GameOver { 
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 766px) {
+  #board {
+    height: 30vw;
+  }
+
+  .tile {
+    font-size: 2.5vw;
+  }
+
+  #Text_GameOver {
+    font-size: 2.2vw;
+  }
+}
+
+body {
+    font-family: cursive;
+}
+
+  h1{
+    text-align: center;
+    color: blanchedalmond;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  
+  .tile{
+    color: blanchedalmond;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .border_right {
+    border-right: 0.2em solid red;
+  }
+  
+  .border_bottom {
+    border-bottom: 0.2em solid red;
+  }
+  
+  .strike {
+    position: absolute;
+    background-color: blue;
+    font-size: 1.2vw;
+  }
+  
+  .strike-row-1 {
+    width: 100%;
+    height: 4px; 
+    top: 15%;
+  }
+  
+  .strike-row-2 {
+    width: 100%;
+    height: 4px; 
+    top: 48%;
+  }
+  
+  .strike-row-3 {
+    width: 100%;
+    height: 4px; 
+    top: 83%;
+  }
+  
+  .strike-column-1 {
+    height: 100%;
+    width: 4px; 
+    left: 15%;
+  }
+  
+  .strike-column-2 {
+    height: 100%;
+    width: 4px; 
+    left: 48%;
+  }
+  
+  .strike-column-3 {
+    height: 100%;
+    width: 4px; 
+    left: 83%;
+  }
+  
+  .strike-diagonal-left {
+    width: 70%;
+    height: 4px;
+    top: 50%;
+    left: 15%;
+    transform: skewY(45deg);
+  }
+  
+  .strike-diagonal-right {
+    width: 70%;
+    height: 4px;
+    top: 50%;
+    left: 15%;
+    transform: skewY(-45deg);
+  }
+  
+  #Area_GameOver {
+    text-align: center;
+  }
+
+  #Text_GameOver { 
+    font-weight: bolder;
+    
+    word-spacing: 0.8vw;
+    letter-spacing: 0.6vw;
+  }
+  
+  h2 {
+    color: blanchedalmond;
+    font-size: 3vw;
+    margin-top: 0px; 
+  }
+  
+#PlayAgain {
+    background-color: transparent;
+    color: red;
+    padding: 6px;
+    font-size: 1.5vw;
+  
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .x-hover:hover::after {
+    content: "X";
+    opacity: 0.4;
+  }
+  
+  .o-hover:hover::after {
+    content: "O";
+    opacity: 0.4;
+  }

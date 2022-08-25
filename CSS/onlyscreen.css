@@ -1,0 +1,23 @@
+@media only screen and (min-width: 770px) {
+    #Ningphoto{
+        padding: 0px 50px 20px 0px;
+    }
+
+    h5{
+        padding: 2% 3%; 
+        font-size: 1.5vw;
+    }
+
+    .h1row { 
+        height: 90px;
+    }
+
+    footer h5 {
+        padding: 0%;
+    }
+}
+@media only screen and (max-width: 770px){
+    .flex {
+        font-size: 15px;
+    }
+}

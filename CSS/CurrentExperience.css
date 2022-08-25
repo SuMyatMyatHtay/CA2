@@ -1,0 +1,122 @@
+@media only screen and (min-width: 1140px){ 
+    #PlayAgain { 
+        margin-top: 20px;
+    }
+    .PTTTWF { 
+        font-size: 1.9vw;
+    }
+}
+
+@media only screen and (max-width: 1139px) { 
+    .PTTTWF {
+        font-size: 23px;
+    }
+}
+
+#CPWM { 
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/bh_accretiondisk_sim_stationary_websize.gif);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body {
+    color: red;
+}
+
+.CE1 { 
+    background-image: url(https://media.istockphoto.com/photos/cluster-of-dark-pink-garden-roses-picture-id802833340?k=20&m=802833340&s=612x612&w=0&h=_lim7xOx1bjtuS789rLv69f3Yv9qDYXKx9iRU9F58rc=);
+    background-position: center;
+    background-size: contain;
+    margin: 40px 0px 50px 0px; 
+}
+
+.coming-soon { 
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ .countdown { 
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+ }
+ 
+ .day,.hour,.minute,.second {
+    font-size: 1.8rem;
+ }
+ 
+ .hovereffect {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid blanchedalmond;
+    border-top: 1px solid blanchedalmond;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0,1);
+  }
+  
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: scale(1);
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    transition: all 0.35s;
+  }
+  
+  .hovereffect:hover img {
+    filter: brightness(0.3);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    color: blanchedalmond;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: opacity 0.35s, transform 0.35s;
+    text-decoration: underline;
+  }
+  
+  .hovereffect a, .hovereffect p {
+    color: blanchedalmond;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: opacity 0.35s, transform 0.35s;
+    font-size: 1vw;
+
+  }
+  
+  .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  .hovereffect a:hover {
+    font-size: 1vw;
+    color: blanchedalmond;
+    text-decoration: none;
+    letter-spacing: 0.2vw;
+  }

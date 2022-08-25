@@ -1,0 +1,18 @@
+@media only screen and (max-width: 765px) { 
+    .hovereffect h2 {
+        font-size: 2vw;
+    }
+    .h3textCO { 
+        font-size: 2vw;
+    }
+}
+@media only screen and (min-width: 765px) {
+    .hovereffect h2 {
+        font-size: 1.7vw;
+    }
+    .h3textCO {
+        font-size: 1vw;
+        letter-spacing: 0.1vw;
+        word-spacing: 0.2vw;
+    }
+}

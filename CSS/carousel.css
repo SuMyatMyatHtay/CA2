@@ -1,0 +1,30 @@
+
+
+
+.card { 
+    background-color: rgb(138, 0, 0);
+    color: blanchedalmond;
+  }
+  
+  .fa-arrow-left, .fa-arrow-right {
+    color: blanchedalmond;
+  }
+  
+  .arrow-box {
+    background-color: rgb(138, 0, 0);
+    border-color: blanchedalmond;
+  }
+  
+  .arrow-box:hover {
+    background-color: black;
+  }
+  
+  .card-text {
+    text-align:justify;
+    line-height: 25px;
+    height: 100px;
+  }
+
+  .card-title {
+    text-decoration: underline;
+  }
