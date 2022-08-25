@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--Bootstrap javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <link rel="stylesheet" href="../CSS/About.css">
+    <link rel="stylesheet" href="../CSS/AboutJava.css">
+    <link rel="stylesheet" href="../CSS/AboutJavaSmall.css">
+    <script src="../Javascript/AboutJava.js" defer></script>
+    <script src="../Javascript/AboutJavaSmall.js" defer></script>
+    <link rel="stylesheet" href="../CSS/onlyscreen.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+    <title> CA2 About </title>
+</head>
+
+<body style="background-color: black;">
+  <!--Hearder part same as index.html file-->
+  <header class="sticky-top"> 
+    <div class="container-fluid" style="background-color: black;">
+    <div class="row" id="header">
+        <div class="col-12 fs-3 text-center py-1 text-nowrap fw-bold">
+            Portfolio of <em>Su Myat Myat Htay</em>
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark my-1">
+      <div class="container-fluid" id="navcolor">
+          <a href="#" class="navbar-brand col-lg-2 col-4" style="font-weight: 600; color: blanchedalmond; font-size: 25px; ">
+              <img src="../Photos/SUFOLIORectangle .png" alt="Sufolio" style="width: 100%; height: 100%">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtext"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navtext">
+              <div class="navbar-nav " style="flex-grow: 1;">
+                  <a class="nav-item nav-link active mx-2 px-3 border border-1 border-danger" style="color: red;" aria-current="page" href="../HTML/index.html">Home</a>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle mx-2 px-3 border border-1 border-danger" style="color: red;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                      </a>
+                      <ul class="dropdown-menu" style="background-color: blanchedalmond;">
+                        <li><a class="dropdown-item my-1" style="color: darkred;" href="../HTML/About.html">About Me</a></li>
+                        <li><a class="dropdown-item my-1" style="color: darkred;" href="../HTML/CurrentExperience.html">Current Experience</a></li>
+                        <li><a class="dropdown-item my-1" style="color: darkred;" href="../HTML/CareerOption.html">Career Option</a></li>
+                      </ul>
+                    </li>             
+                  <a class="nav-item nav-link mx-2 px-3 border border-1 border-danger" style="color: red;" href="../HTML/Feedback.html">Feedback</a>
+                    
+                    
+              </div>
+              <div class="d-flex">
+                <form class="d-flex" role="search" action="https://google.com/search">
+                  <input class="form-control me-2 bg-dark" name="q" type="search" style="border-color: rgb(86, 0, 0); border-style: solid; border-width: 2px; border-radius: 20px; color: blanchedalmond;" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="button" style="color: blanchedalmond; font-weight: 50px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                  </button>
+                </form>
+                </div>
+          </div>
+      </div>
+  </nav>
+</header>         
+  <!--first part-->
+    <div class="container-fluid" id="Javacontainer">
+      <div class="row" >
+        <div class="container-fluid col-1 d-none d-md-block"></div>
+        <!--This is for image in middle size and above screen size-->
+        <div class="container-fluid col-4 d-none d-md-block">
+          <img src="../Photos/aboutPhoto.jpg" alt="same photo of bg pic" style="height: 100%; width: 100%;">
+        </div>
+        <!--This is to print out the image in smaller than middle size screen-->
+        <div class="container-fluid col-7 d-block d-md-none">
+          <img src="../Photos/aboutPhoto.jpg" alt="same photo of bg pic" style="height: 100%; width: 100%;">
+        </div>
+
+        <!--Javascript for the screen size larger than or equal to middle size-->
+        <div class='console-container col-md-6 d-none d-md-block' style="margin-left: 50px; margin-bottom: 14%;">
+          <!--Print out text-->
+          <span id='text'></span>
+          <!--Print out cursor-->
+          <div class='console-underscore' id='console'>|</div>
+        </div>
+        <!--space-->
+        <div class="container-fluid col-1 d-none d-md-block"></div>
+
+        <!--Javascript for screen size smaller than middle-->
+        <div class="d-block d-md-none" style="text-align: center;">
+          <!--Text-->
+          <h1 class="ml9">
+            <span class="text-wrapper">
+              <span class="letters">Welcome to my webpage</span>
+            </span>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container d-block d-md-none" style="height: 110px;"></div>
+
+    <!--This is to print out heart line gifs-->
+    <div class="row container-fluid">
+      <img src="https://data.whicdn.com/images/155567200/original.gif" alt="gif" style="width: 20%; height: 150px;">
+      <img src="https://data.whicdn.com/images/155567200/original.gif" alt="gif" style="width: 20%; height: 150px;">
+      <img src="https://data.whicdn.com/images/155567200/original.gif" alt="gif" style="width: 20%; height: 150px;">
+      <img src="https://data.whicdn.com/images/155567200/original.gif" alt="gif" style="width: 20%; height: 150px;">
+      <img src="https://data.whicdn.com/images/155567200/original.gif" alt="gif" style="width: 20%; height: 150px;">
+    </div>
+
+    <div class="container-fluid d-block">
+      <div class="h1row row">
+        <h1 style="letter-spacing: 1.8vw; padding-left: 40px; font-weight: 600;">ABOUT</h1>
+      </div>
+      <!--About Section-->
+      <div class="row container-fluid">
+        <!--Space before picture-->
+        <div class="container col-1"></div>
+        <!--Image eith the space of 3 columns in mid and bigger size screen, full screen for smaller than l=mid size screen-->
+        <img class="col-12 col-md-4" src="../Photos/Ning.jpg" alt="Photo of me and NingXuan" id="Ningphoto" style="padding: 20px 50px 20px 0px; filter: brightness(120%);">
+        <!--container on the right side of image-->
+        <div class="container d-block d-md-none" style="height: 30px;"></div>
+        <div class="container col-md-7 col-xs-12">
+          <!--First box in the container-->
+          <div class="border border-danger mx-4">
+            <h5>I am currently a diploma student of Common IT programme, who is persuading the diploma degree in Singapore Polytechnic. <br><br> Here are the basic detail of myself >>></h5>
+          </div>
+
+          <!--container table under the first box-->
+          <div class="container" style="padding:2% 0%">
+          <div class="row">
+            <div class="flex col-6 border border-danger">Name:</div>
+            <div class="flex col-6 border border-danger">Su Myat Myat Htay</div>
+          </div>
+          <div class="row">
+            <div class="flex col-6 border border-danger">Age:</div>
+            <div class="flex col-6 border border-danger">18 years old</div>
+          </div>
+          <div class="row">
+            <div class="flex col-6 border border-danger">Nationality:</div>
+            <div class="flex col-6 border border-danger">Myanmar</div>
+          </div>
+          <div class="row">
+            <div class="flex col-6 border border-danger">Race:</div>
+            <div class="flex col-6 border border-danger">Chinese</div>
+          </div>
+          <div class="row">
+            <div class="flex col-6 border border-danger">Highest Education:</div>
+            <div class="flex col-6 border border-danger">high school graduate</div>
+          </div>
+          <div class="row">
+            <div class="flex col-6 border border-danger">Currently persuading degree:</div>
+            <div class="flex col-6 border border-danger">Diploma from Singapore Polytechnic</div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</body>
+
+<!--Footer-->
+<footer style="margin-top: 50px;">
+     <h4>ABOUT ⓒ</h4>
+     <h5>last updated on 7th August 2022 <br> &copy; Su Myat Myat Htay</h5>
+</footer> 
