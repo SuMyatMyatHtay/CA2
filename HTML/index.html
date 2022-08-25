@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--Bootstrap javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../CSS/SMMH.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+    <script src="../Javascript/SMMH.js" defer></script>
+    <script src="../Javascript/SMMHsub.js" defer></script>
+    <script src="../Javascript/SMMHsmall.js" defer></script>
+    <script src="../Javascript/SMMHsmallsub.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <title> CA2 Index </title>
+
+</head>
+
+<body style="background-color: black;">
+  <!--Header of the page-->
+  <header class="sticky-top"> 
+      <div class="container-fluid" style="background-color: black;">
+      <div class="row" id="header">
+          <div class="col-12 fs-3 text-center py-1 text-nowrap fw-bold">
+              Portfolio of <em>Su Myat Myat Htay</em>
+      </div>
+      </div>
+      <!--Navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-dark my-1">
+        <div class="container-fluid" id="navcolor">
+          <!--Sufolio Logo for navigation bar-->
+            <a href="#" class="navbar-brand col-lg-2 col-4" style="font-weight: 600; color: blanchedalmond; font-size: 25px; ">
+                <img src="../Photos/SUFOLIORectangle .png" alt="Sufolio" style="width: 100%; height: 100%">
+            </a>
+            <!--Haamburger collapse bar-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtext"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navtext">
+                <div class="navbar-nav " style="flex-grow: 1;">
+                    <a class="nav-item nav-link active mx-2 px-3 border border-1 border-danger" style="color: red;" aria-current="page" href="../HTML/index.html">Home</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2 px-3 border border-1 border-danger" style="color: red;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Others
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: blanchedalmond;">
+                          <li><a class="dropdown-item my-1" style="color: darkred;" href="../HTML/About.html">About Me</a></li>
+                          <li><a class="dropdown-item my-1" style="color: darkred;" href="../HTML/CurrentExperience.html">Current Experience</a></li>
+                          <li><a class="dropdown-item my-1" style="color: darkred;" href="../HTML/CareerOption.html">Career Option</a></li>
+                        </ul>
+                      </li>             
+                    <a class="nav-item nav-link mx-2 px-3 border border-1 border-danger" style="color: red;" href="../HTML/Feedback.html">Feedback</a>
+                      
+                      
+                </div>
+                <!--Search bar connected to google-->
+                <div class="d-flex">
+                  <form class="d-flex" role="search" action="https://google.com/search">
+                    <input class="form-control me-2 bg-dark" name="q" type="search" style="border-color: rgb(86, 0, 0); border-style: solid; border-width: 2px; border-radius: 20px; color: blanchedalmond;" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="button" style="color: blanchedalmond; font-weight: 50px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                    </button>
+                  </form>
+                  </div>
+            </div>
+        </div>
+    </nav>
+  </header>       
+            <div class="row mt-5 mx-3" style="background-color: black;">
+              <!--left side square-->
+                <div class="px-4 container col-xl-3 col-md-6 .d-none .d-lg-block text-white border border-3 border-danger " >
+                  <div class="container border border-3 border-danger py-3">
+                    <div class="row fs-3 text-right" style="color: blanchedalmond;">This website includes</div>
+                  </div>
+                  <div class="testing row lh-lg my-4 fs-5 text-decoration-underline"><i class="bi bi-megaphone-fill"> About</i></div>
+                  <div class="testing row lh-lg my-4 fs-5 text-decoration-underline"><i class="bi bi-megaphone-fill"> Current Experience</i></div>
+                  <div class="testing row lh-lg my-4 fs-5 text-decoration-underline"><i class="bi bi-megaphone-fill"> Career Option</i></div>
+                  <div class="testing row lh-lg my-4 fs-5 text-decoration-underline"><i class="bi bi-megaphone-fill"> Feedback</i></div>
+                </div>
+
+                <!--Javascript for small size screen-->
+                  <h1 class="ml16 d-lg-none d-sm-block">Su Myat Myat Htay </h1>
+                  <h1 class="ml10 d-lg-none d-sm-block">
+                    <span class="text-wrapper">
+                      <span class="letters">Freelance Programmer</span>
+                    </span>
+                  </h1>
+
+                  <!--Right side 3 pictures-->
+                  <div class="container-fluid-float col-xl-5 col-md-7 position-relative px-5" style="margin-right: -40px;">
+                    <img src="../Photos/SOCC1.jpg" class="img-fluid" alt="SOCC pic" style="height: 95%;">
+                  </div>
+                  <div class="container-fluid-float col-xl-3 col-md-5 position-relative mt-5 me-4"> 
+                    <img src="../Photos/YCEP1.jpg" class="img-fluid" alt="full body" style="height: 105%;">
+                  </div> 
+                  <div class="container col-xl-2 col-md-2"></div>
+                  <!--Third picture for l-size and xl-size screen-->
+                  <div class="container-fluid-float position-relative col-xl-3 col-md-5 d-none d-xl-block" style="margin-right: 20%; margin-top:-2%;">
+                    <img src="../Photos/image4.jpg" class="img-fluid" alt="half-face">
+                  </div>
+                  <!--Third picture for small size screens-->
+                  <div class="container-fluid-float position-relative col-xl-3 col-md-5 d-sm-block d-xl-none" style="margin-right: 8%; margin-top:-2%;">
+                    <img src="../Photos/image4.jpg" class="img-fluid" alt="half-face">
+                  </div>
+            <div>
+
+            <!--Javascript for large size and extra large size screens-->
+            <h1 class="ml6 d-flex flex-column col-xl-7 col-lg-6 position-relative d-none d-lg-block" style="color: blanchedalmond; margin-top: -160px; margin-bottom: 160px;">
+              <div class="col-lg-7 d-lg-block d-xl-none d-none"> </div>
+              <span class="text-wrapper">
+                <span class="letters" style="word-spacing: 25px; letter-spacing:15px; text-align: center;">SU MYAT MYAT HTAY</span>
+              </span>
+            </h1>      
+            <h1 class="ml5 d-flex flex-column col-md-5 position-relative d-none d-lg-block" style="margin-top: -150px; margin-left: 80px;">
+              <span class="text-wrapper">
+                <span class="line line1 d-lg-none d-xl-block"></span>
+                <span class="letters letters-left">FREELANCE</span>
+                <span class="letters ampersand"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+                  <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12ZM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Z"/>
+                  <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                </svg></span>
+                <span class="letters letters-right ps-3">PROGRAMMER</span>
+                <span class="line line2"></span>
+              </span>
+            </h1>
+            </div>    
+
+            </div>
+</body>
+
+<!--Footer-->
+<footer style="margin-top: 50px;">
+  <h4>Index ⓒ</h4>
+  <h5>last updated on 7th August 2022 <br> &copy; Su Myat Myat Htay</h5>
+</footer> 
+
+</html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
 
